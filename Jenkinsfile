@@ -6,7 +6,6 @@ pipeline {
                   sh 'tidy -q -e *.html'
               }
          }
-     stages {
          stage('Upload to AWS') {
              steps {
                  sh 'echo "Hello AWS"'
